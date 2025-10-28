@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    {{- partial "head.html" . -}}
+    <body data-theme = "{{ .Site.Params.defaultColor }}" class="notransition">
+        {{- partial "scriptsBodyStart.html" . -}}
+        {{- partial "header.html" . -}}
+        <div class="wrapper">
+            {{ partial "bio" . }}
+            <main aria-label="Content">
+                <h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3>
+                {{ $posts := where .Site.RegularPages ".Section" "==" "posts" }}
+                {{ $sortedPosts := $posts.ByDate.Reverse }}
+                {{ range first 5 $sortedPosts }}
+                {{ partial "postCard" . }}
+                {{ end }}
+                {{ if gt (len $sortedPosts) 5 }}
+                <p>
+                    <a href="/posts/">See all posts</a>
+                </p>
+                {{ end }}
+            </main>
+        </div>
+        {{- partial "footer.html" . -}}
+        {{- partial "scriptsBodyEnd.html" . -}}
+    </body>
+</html>

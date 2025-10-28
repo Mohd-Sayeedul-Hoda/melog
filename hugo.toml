@@ -1,27 +1,72 @@
-baseURL = 'https://blog.sayeedhoda.com/'
+baseURL = 'https://profile.sayeedhoda.com/'
 languageCode = 'en-us'
-title = 'Blog Sayeed'
+title = 'profile sayeed'
+
+[module]
+  [[module.imports]]
+    path = "github.com/hugo-sid/hugo-blog-awesome"
+
+enableEmoji = true
+
+[outputs]
+  home = [ "HTML", "RSS" ] # Generate RSS
+
+[menu]
+  [[menu.main]] 
+    pageRef="/"
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    pageRef="posts"
+    name = 'Posts'
+    url = '/posts/'
+    weight = 30
+  [[menu.main]]
+    pageRef="project"
+    name = 'Project'
+    url = 'pages/projects'
+    weight = 30
+  [[menu.main]]
+    pageRef="about"
+    name = 'About'
+    url = '/pages/about'
+    weight = 40
+
+
+[params]
+  sitename = "Mohd Sayeedul Hoda"
+  defaultColor = "dark"
+  description = "Full Stack Developer. Mostly write code in Go"
+
+[params.author]
+  avatar = "img/me.jpg"
+  intro = "Mohd Sayeedul Hoda"
+  name = "Mohd Sayeedul Hoda"
+  description = "Full Stack Developer"
+
 
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/Mohd-Sayeedul-Hoda"
 
-[[params.socialIcons]]
-name = "twitter"
-url = "https://x.com/HodaSayeed"
+# [[params.socialIcons]]
+# name = "twitter"
+# url = "https://x.com/HodaSayeed"
 
 [[params.socialIcons]]
 name = "linkedin"
 url = "https://www.linkedin.com/in/mohd-sayeedul-hoda/"
 
 [[params.socialIcons]]
-name = "-"
-url = "https://www.linkedin.com/in/mohd-sayeedul-hoda/"
+name = "email"
+url = "mailto:him@sayeedhoda.com"
+
+# [[params.socialIcons]]
+# name = "-"
+# url = "https://drive.google.com/file/d/12gThUQxkiR04b7G5aOLK-Idqi73tQyh1/view?usp=sharing"
 
 [[params.socialIcons]]
 name = "Rss"
 url = "/index.xml"
 
-[module]
-  [[module.imports]]
-    path = "github.com/hugo-sid/hugo-blog-awesome"

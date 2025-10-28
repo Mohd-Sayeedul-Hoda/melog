@@ -1,0 +1,9 @@
+<div class="bio">
+    {{ if .Site.Params.author.avatar }}
+        <div style="display: flex; justify-content: center; margin: 20px 0 15px 0;">
+            <img class="author-avatar" src="{{ .Site.Params.author.avatar | absURL }}" alt="{{ .Site.Params.author.name }}" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; box-shadow: 4px 4px 8px rgba(0,0,0,0.3);">
+        </div>
+    {{ end }}
+    <h1 class="author-name" style="text-align: center;">{{ .Site.Params.author.name }}</h1>
+    <p class="author-description" style="text-align: center;">{{ .Site.Params.author.description }}</p>
+</div>
