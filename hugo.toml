@@ -23,8 +23,8 @@ enableEmoji = true
     url = '/posts/'
     weight = 30
   [[menu.main]]
-    pageRef="project"
-    name = 'Project'
+    pageRef="projects"
+    name = 'Projects'
     url = 'pages/projects'
     weight = 30
   [[menu.main]]
