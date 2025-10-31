@@ -39,7 +39,7 @@ You can find the complete list here [link](https://en.wikipedia.org/wiki/List_of
 
 
 #### **A Record**
-A record is a fundamental type of DNS record. It is used to point the **Domain name to its corrosponding IPv4 address**
+A record is a fundamental type of DNS record. It is used to point the **Domain name to its corresponding IPv4 address**
 It tells the system: 'If someone asks for example.com, send them to this specific IPv4 address
 
 #### **AAAA Record**
@@ -58,7 +58,7 @@ MX Records also known as Mail Exchange Records. Is use to point to mail server w
 When someone sends an email to `you@example.com`, the sending mail server checks the MX record to know exactly where to deliver it.
 
 #### **TXT Record**
-TXT Record also known as Text Record. It was first used to store text infomation inside DNS.
+TXT Record also known as Text Record. It was first used to store text information inside DNS.
 Now it is often used to include verification of domain ownership.
 
 #### **NS Record**
