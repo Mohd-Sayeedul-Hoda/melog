@@ -1,10 +1,9 @@
 baseURL = 'https://profile.sayeedhoda.com/'
 languageCode = 'en-us'
 title = 'profile sayeed'
+theme = 'hugo-blog-awesome'
 
-[module]
-  [[module.imports]]
-    path = "github.com/hugo-sid/hugo-blog-awesome"
+
 
 enableEmoji = true
 
