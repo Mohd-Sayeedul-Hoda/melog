@@ -5,7 +5,7 @@ author: sayeed
 date: 2025-10-28
 ---
 
-### Domain Name System also knows as DNS
+### Domain Name System also known as DNS
 
 It basically converts the name of website that you easily understand into the IP address.
 An IP address in unique number used by computer on network to identifies which  device they should communicate with.
@@ -43,7 +43,7 @@ A record is a fundamental type of DNS record. It is used to point the **Domain n
 It tells the system: 'If someone asks for example.com, send them to this specific IPv4 address
 
 #### **AAAA Record**
-AAAA record also known as quad-A records. It is used to point the **Domain name to its corrosponding IPv6 address**
+AAAA record also known as quad-A records. It is used to point the **Domain name to its corresponding IPv6 address**
 
 #### **Canonical Name Record (CNAME)**
 CNAME Record is used to map any alias (different name) or subdomain to another domain. **CNAME always points to another domain name, never directly to an IP address**
@@ -54,15 +54,15 @@ The Real Address (The Target): `myusername.thirdpartyservice.com` \
 Instead of giving your blog's visitors the long, confusing Target address, you create an Alias (blog.mywebsite.com) that points directly to it.
 
 #### **MX Record**
-MX Records also knows as Mail Exchange Records. Is use to point to mail server which will be handling mail regarding your domain.
+MX Records also known as Mail Exchange Records. Is use to point to mail server which will be handling mail regarding your domain.
 When someone sends an email to `you@example.com`, the sending mail server checks the MX record to know exactly where to deliver it.
 
 #### **TXT Record**
-TXT Record also knows as Text Record. It was first use to store text infomation inside DNS.
+TXT Record also known as Text Record. It was first used to store text infomation inside DNS.
 Now it is often used to include verification of domain ownership.
 
 #### **NS Record**
-NS Records also knows as Name Server Records. It specify name servers that hold the DNS records for a particular domain.
+NS Records also known as Name Server Records. It specify name servers that hold the DNS records for a particular domain.
 When we type `profile.sayeedhoda.com` first it goes to Name Server where all my above records had been saved. From there
 it found which Domain or IP it should point to resolve this query
 
