@@ -6,7 +6,7 @@ date: 2025-10-27
 ---
 
 ##### Hi there, I am **Mohd Sayeedul Hoda**
-I am 24 years old. I am grateful to experience this universe and I also like footbal.
+I am 24 years old. I am grateful to experience this universe and I also like football.
 Currently in process of figuring out to what do with my life.
 
 I am fullstack developer. My go to tech stack in Go, React(.tsx), Postgres, Redis and a VPS.
